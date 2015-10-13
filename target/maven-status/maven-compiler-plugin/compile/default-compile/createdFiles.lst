@@ -1,8 +1,0 @@
-ru\kpfu\itis\controller\IndexController.class
-ru\kpfu\itis\controller\UsersControler.class
-ru\kpfu\itis\repository\UserRepository.class
-ru\kpfu\itis\service\impl\UserServiceImpl.class
-ru\kpfu\itis\model\User.class
-ru\kpfu\itis\repository\impl\UserRepositoryImpl.class
-ru\kpfu\itis\service\UserService.class
-ru\kpfu\itis\util\UserFormValidator.class

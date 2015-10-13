@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="03.JSTL.Forms_processing:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="03.JSTL.Forms_processing-1.0-SNAPSHOT.war">
-      <element id="artifact" artifact-name="03.JSTL.Forms_processing:war exploded" />
-    </root>
-  </artifact>
-</component>
