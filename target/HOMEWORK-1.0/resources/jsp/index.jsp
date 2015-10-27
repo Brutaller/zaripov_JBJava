@@ -13,21 +13,21 @@
   </head>
   <body>
   <form action="/sum" method="post">
-    <input type="text" name="firstname">
-    <input type="text" name="surname">
-    <input type="text" name="lastname">
+    <input type="text" name="firstname" placeholder="firstname">
+    <input type="text" name="surname" placeholder="surname">
+    <input type="text" name="lastname" placeholder="lastname">
     <input type="submit">
   </form>
   <form action="/avg" method="post">
-    <input type="text" name="firstname">
-    <input type="text" name="surname">
-    <input type="text" name="lastname">
+    <input type="text" name="firstname" placeholder="firstname">
+    <input type="text" name="surname" placeholder="surname">
+    <input type="text" name="lastname" placeholder="lastname">
     <input type="submit">
   </form><br>
   <form action="/subj" method="post">
-    <input type="text" name="firstname">
-    <input type="text" name="surname">
-    <input type="text" name="lastname">
+    <input type="text" name="firstname" placeholder="firstname">
+    <input type="text" name="surname" placeholder="surname">
+    <input type="text" name="lastname" placeholder="lastname">
     <select name="subject"><br>
       <option selected value=0>MATH</option>
       <option selected value=1>ENGLISH</option>
