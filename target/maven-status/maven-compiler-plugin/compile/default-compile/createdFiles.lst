@@ -1,0 +1,13 @@
+service\StudentService.class
+model\Subjects.class
+repository\impl\StudentRepositoryImpl.class
+service\impl\StudentServiceImpl.class
+model\Student.class
+controller\IndexController.class
+model\Score.class
+service\impl\ScoreServiceImpl.class
+repository\ScoresRepository.class
+repository\StudentRepository.class
+service\ScoresService.class
+repository\impl\ScoresRepositoryImpl.class
+controller\StudentsController.class
