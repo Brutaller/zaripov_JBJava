@@ -38,16 +38,6 @@ public class StudentsController {
 
     @RequestMapping(value = "/avg")
     public String showAvgScore(@ModelAttribute Student student, Model model) {
-//        Integer result = studentService.findStudent(student);
-//        List<Score> scores = scoresService.findScoresById(result);
-//        int count = 0;
-//        int res = 0;
-//        for (Score score : scores) {
-//            count++;
-//            res += score.getScore();
-//        }
-//        model.addAttribute("result", (res / count));
-
         Integer result = studentService.findStudent(student);
         BigDecimal scores = scoresService.findAvgScoresById(result);
         model.addAttribute("result", scores);

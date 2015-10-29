@@ -21,7 +21,7 @@ public class StudentRepositoryImpl implements StudentRepository {
 
     @Override
     public Integer findStudent(Student student) {
-        Query query = em.createNativeQuery("SELECT id FROM students where firstname = ? and surname = ? and lastname = ? ");
+        Query query = em.createNativeQuery("SELECT id FROM students where lower(firstname) = lower(?) and lower(surname) = lower(?) and lower(lastname) = lower(?)");
         query.setParameter(1,student.getFirstname());
         query.setParameter(2,student.getSurname());
         query.setParameter(3,student.getLastname());
