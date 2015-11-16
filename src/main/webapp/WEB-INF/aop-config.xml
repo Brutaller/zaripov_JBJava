@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <aop:config>
+        <aop:pointcut id="timeLog" expression="@annotation(ru.kpfu.itis.annotation.Time)"/>
+        <aop:aspect ref="timeAnalyzer">
+            <aop:before method="before" pointcut-ref="timeLog"/>
+            <aop:after method="after" pointcut-ref="timeLog"/>
+        </aop:aspect>
+    </aop:config>
+
+    <bean id="timeAnalyzer" class="aop.TimeAnalyzer"/>
+
+    <aop:config>
+        <aop:pointcut id="exceptions" expression="execution(* service.*.*(..))"/>
+        <aop:aspect ref="catchingExceptions">
+            <aop:around method="executionMethod" pointcut-ref="exceptions"/>
+        </aop:aspect>
+    </aop:config>
+
+    <bean id="catchingExceptions" class="aop.CatchingExceptions"/>
+</beans>
