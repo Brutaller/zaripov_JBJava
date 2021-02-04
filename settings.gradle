@@ -1,0 +1,3 @@
+rootProject.name = 'homeworkGradle'
+include 'kpfu.Service'
+include 'kpfu.Model'
